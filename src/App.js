@@ -9,7 +9,7 @@ function App() {
       
       <div className="green-box-container">
         <div className="green-box">
-          Box 1
+          Most Listened To Genre
         </div>
         <div className="green-box">
           Box 2
