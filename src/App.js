@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Code works Yasss yas!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing React App stuff
-        </a>
+        <p>Today's Spotify Analytics</p>
       </header>
+      
+      <div className="green-box-container">
+        <div className="green-box">
+          Box 1
+        </div>
+        <div className="green-box">
+          Box 2
+        </div>
+        <div className="green-box">
+          Box 3
+        </div>
+      </div>
     </div>
   );
 }

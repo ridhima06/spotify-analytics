@@ -1,5 +1,49 @@
+/* App.css */
+
+/* Overall page styling */
 .App {
-  text-align: center;
+  background-color: black;  /* Black background for the page */
+  min-height: 100vh;         /* Full viewport height */
+  display: flex;             /* Flexbox layout for the body */
+  flex-direction: column;    /* Align items vertically */
+  align-items: center;       /* Center items horizontally */
+  justify-content: flex-start; /* Align content at the top */
+  margin: 0;                 /* Remove any default margin */
+  padding: 0;
+}
+
+/* Header styling */
+.App-header {
+  background-color: green;   /* Full green background for the header */
+  color: white;              /* White text color */
+  padding: 8px 16px;         /* Reduced padding for a shorter box */
+  border-radius: 10px;       /* Optional: Rounded corners for the header */
+  margin-top: 30px;          /* Space between header and top of the screen */
+  text-align: center;        /* Center the text horizontally */
+  font-size: 2.5rem;         /* Adjusted font size for shorter box */
+  font-family: 'Circular Std', 'Helvetica Neue', 'Arial', sans-serif;  /* Spotify-like font */
+  display: inline-block;     /* Make the header box only as wide as the content */
+  box-sizing: border-box;    /* Include padding and border in element's total width/height */
+}
+
+/* Green Box Container (the flexbox container for the 3 boxes) */
+.green-box-container {
+  display: flex;             /* Use flexbox to position boxes horizontally */
+  justify-content: space-between; /* Space between the boxes */
+  width: 80%;                /* Container width, adjust as needed */
+  margin-top: 20px;          /* Space between header and boxes */
+}
+
+/* Styling for each individual green box */
+.green-box {
+  background-color: green;   /* Green background for each box */
+  color: white;              /* White text color */
+  padding: 20px;             /* Padding inside each box */
+  text-align: center;        /* Center text inside each box */
+  font-size: 1.5rem;         /* Font size for text inside the box */
+  border-radius: 10px;       /* Optional: Rounded corners for the boxes */
+  width: 30%;                /* Each box takes up 30% of the container width */
+  box-sizing: border-box;    /* Include padding and border in element's total width/height */
 }
 
 .App-logo {
@@ -13,21 +57,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +64,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-link {
+  color: #61dafb;
 }
